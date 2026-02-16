@@ -15,7 +15,7 @@ router.get('/:countriesId', (req, res) => {
         }       
 
     });
-    res.status(200).json(book);
+    res.status(200).json(countries);
 });
 
 module.exports = router;
