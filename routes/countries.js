@@ -7,11 +7,11 @@ router.get('/', (req, res) => {
     res.status(200).json(data);
 });
 
-router.get('/:countriesId', (req, res) => {
-    const requstedCountriesId = req.params.countriesId;
-    const book = data.countries.filter(countriesIndata =>{
-        if(countriesIndata.id.toString() === requstedCountriesId){
-            return countriesIndata;
+router.get('/:countryId', (req, res) => {
+    const requstedCountryId = req.params.countryId;
+    const countries = data.countries.filter(countryIndata =>{
+        if(countryIndata.id.toString() === requstedCountryId){
+            return countryIndata;
         }       
 
     });
